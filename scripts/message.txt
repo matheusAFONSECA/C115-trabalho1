@@ -1,0 +1,6 @@
+feat(project): scripts to make a commit and requirements
+
+It was added a script to make the add,
+commit and push of files changed, followed
+by a message that explains all the things
+made.
