@@ -1,6 +1,5 @@
-feat(project): scripts to make a commit and requirements
+feat(project): Added a base code for flask
 
-It was added a script to make the add,
-commit and push of files changed, followed
-by a message that explains all the things
-made.
+It was added a base code using
+flask, this tool will be used to 
+make the API.
