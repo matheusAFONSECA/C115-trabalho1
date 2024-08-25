@@ -1,4 +1,6 @@
-feat(project): Added a test and POST method
+feat(project): base fronted added
 
-It was added a test code and a POST
-methos of how the API works.
+A basic fronted was Added
+to the repository to show 
+a base usage of the tool
+streamlit.
