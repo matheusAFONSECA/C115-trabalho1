@@ -1,4 +1,0 @@
-feat(project): frontend options display
-
-Now the app can display the
-options available from the API.
