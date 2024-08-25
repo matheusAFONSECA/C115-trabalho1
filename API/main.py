@@ -6,7 +6,7 @@ app = Flask(__name__)
 def hello():
     return 'Flask is installed and working!'
 
-@app.route('/phase', methods=['POST'])
+@app.route('/telefonia', methods=['POST'])
 def phase():
     data = request.get_json()
     number = data['escolha']
