@@ -1,31 +1,18 @@
 import streamlit as st
-from utils.frontend_utils import send_request
-
+from utils.frontend_utils import send_request, initialize
 
 def main():
-    st.title("Chatbot de telefonia")
-    st.write("Bem-vindo, eu sou um chatbot de telefonia.")
-    st.write("Qual dos serviços abaixo você deseja saber sobre o seu usuário?")
+    initialize()  # Inicializa as configurações padrões da página
 
-    # Add a chatbox
-    # user_input = st.text_input("Digite sua mensagem")
-
-    # show the user options to choose from
+    # Mostrar as opções para o usuário escolher
     if st.button("Telefone"):
-        connection, options = send_request(1)  # Display the API message in the frontend
-
-        if connection:
-            st.button(options["1"])
-            st.button(options["2"])
-            st.button(options["3"])
-        
+        st.switch_page("pages/pages_telefone.py")        
 
     if st.button("Internet"):
-        send_request(2)  # Display the API message in the frontend
+        st.switch_page("pages/pages_internet.py")
 
     if st.button("Falar com um atendente"):
-        send_request(3)  # Display the API message in the frontend
-
+        st.switch_page("pages/pages_atendente.py")
 
 if __name__ == "__main__":
     main()

@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 
 
-def send_request(number: int) -> str:
+def send_request(number: int):
     try:
         data = {"escolha": number}
 
@@ -17,10 +17,23 @@ def send_request(number: int) -> str:
                 "Serviço indisponível no momento, por favor, tente novamente mais tarde."
             )
 
-    except Exception as e:
+    except Exception:
         st.write("Erro ao conectar com o servidor")
+
+        return
 
         # st.write(e)  # Display the error message in the frontend
 
     # connection successful
     return True, api_response["options"]
+
+
+def initialize():
+    st.set_page_config(
+        page_title="Chatbot de telefonia",
+        layout="wide",
+        initial_sidebar_state="collapsed",
+    )
+    st.title("Chatbot de telefonia")
+    st.write("Bem-vindo, eu sou um chatbot de telefonia.")
+    st.write("Qual dos serviços abaixo você deseja saber sobre o seu usuário?")

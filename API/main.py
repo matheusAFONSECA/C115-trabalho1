@@ -17,23 +17,23 @@ def phase():
         response = {
             "message": "Você irá ver sobre a situação do seu telefone",
             "options": {
-                "1": "Verificar saldo",
-                "2": "Verificar minutos",
-                "3": "Verificar SMS",
+                "1": "Verificar plano atual",
+                "2": "Verificar minutos/SMS disponíveis",
+                "3": "Verificar faturas",
             },
         }
     elif number == 2:
         response = {
-            "message": "Phase 2",
+            "message": "Você irá ver sobre a situação da sua internet",
             "options": {
-                "1": "Verificar saldo",
-                "2": "Verificar minutos",
-                "3": "Verificar SMS",
+                "1": "Verificar plano atual",
+                "2": "Verificar quantidade de GB disponível",
+                "3": "Verificar faturas",
             },
         }
     elif number == 3:
         response = {
-            "message": "Serviço indisponível, por favor, tente novamente mais tarde.",
+            "message": "Serviço indisponível no momento.",
             "options": "Nehuma opção disponível",
         }
     else:
