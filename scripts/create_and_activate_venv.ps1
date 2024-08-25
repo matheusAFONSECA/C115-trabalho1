@@ -1,7 +1,7 @@
 # PowerShell Script: create_and_activate_venv.ps1
 
 # Fixed name for the virtual environment
-$venvName = "venv"
+$venvName = "C115venv"
 
 # Automatically detect the Python path
 $pythonPath = (Get-Command python).Source
