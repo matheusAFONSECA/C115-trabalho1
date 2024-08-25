@@ -1,6 +1,5 @@
-feat(project): base fronted added
+feat(project): buttons options added
 
-A basic fronted was Added
-to the repository to show 
-a base usage of the tool
-streamlit.
+Two buttons that shows
+options to the user was
+added.
