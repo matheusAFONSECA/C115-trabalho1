@@ -1,5 +1,4 @@
-feat(project): Added a base code for flask
+feat(project): Added a test and POST method
 
-It was added a base code using
-flask, this tool will be used to 
-make the API.
+It was added a test code and a POST
+methos of how the API works.
