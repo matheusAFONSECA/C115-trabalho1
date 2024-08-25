@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
@@ -12,13 +12,15 @@ def phase():
     number = data['escolha']
     
     if number == 1:
-        return 'Phase 1'
+        response = {'message': 'Phase 1'}
     elif number == 2:
-        return 'Phase 2'
+        response = {'message': 'Phase 2'}
     elif number == 3:
-        return 'Phase 3'
+        response = {'message': 'Serviço indisponível, por favor, tente novamente mais tarde.'}
     else:
-        return 'Escolha invalida'
+        response = {'message': 'Escolha invalida'}
+    
+    return jsonify(response)
 
 if __name__ == '__main__':
     app.run()

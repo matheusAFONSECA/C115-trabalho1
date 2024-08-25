@@ -1,5 +1,6 @@
-feat(project): buttons options added
+feat(project): frontend integration started
 
-Two buttons that shows
-options to the user was
-added.
+integration between frontend and 
+the API started, and some
+modifications in API where made.
+The modularization was started too.
