@@ -1,4 +1,0 @@
-feat(project): Added a test and POST method
-
-It was added a test code and a POST
-methos of how the API works.
