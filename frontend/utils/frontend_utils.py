@@ -22,8 +22,6 @@ def send_request(number: int):
 
         return
 
-        # st.write(e)  # Display the error message in the frontend
-
     # connection successful
     return True, api_response["options"]
 
@@ -37,8 +35,3 @@ def initialize():
     st.title("Chatbot de telefonia")
     st.write("Bem-vindo, eu sou um chatbot de telefonia.")
     st.write("Qual dos serviços abaixo você deseja saber sobre o seu usuário?")
-
-
-def options_button(options):
-    for option in options.values():
-        st.button(option)
