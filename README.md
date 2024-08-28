@@ -13,11 +13,13 @@ The project is built using `Python 3.9`.
 
 ## Index
 - [Cloning the Repository](#cloning-the-repository)
-- [Creating and Activating the Virtual Environment](#creating-and-activating-the-virtual-environment)
-  - [1. Using Commands](#1---using-commands)
-  - [2. Using a Script](#2---using-a-script)
-- [Installing the Requirements](#installing-the-requirements)
-- [Running the Code](#running-the-code)
+- [Running the Code Locally](#running-the-code-locally)
+  - [Creating and Activating the Virtual Environment](#creating-and-activating-the-virtual-environment)
+    - [1 - Using Commands](#1---using-commands)
+    - [2 - Using a Script](#2---using-a-script)
+  - [Installing the Requirements](#installing-the-requirements)
+  - [Running python files](#running-python-files)
+- [Running the Code with Docker](#running-the-code-with-docker)
 
 ## Cloning the Repository
 
@@ -27,11 +29,13 @@ To get started, clone this repository to your local machine. Run the following c
 git clone https://github.com/matheusAFONSECA/C115-trabalho1.git
 ```
 
-## Creating and Activating the Virtual Environment
+## Running the Code Locally
+
+### Creating and Activating the Virtual Environment
 
 A Python interpreter must be previous installed on your machine to create and activate the virtual environment. There are two ways to set up the virtual environment:
 
-### 1 - Using Commands
+#### 1 - Using Commands
 
 To create a virtual environment in your repository, run the following command:
 
@@ -45,7 +49,7 @@ After creating the virtual environment, activate it with the following command:
 .\C115venv\Scripts\activate
 ```
 
-### 2 - Using a script
+#### 2 - Using a script
 
 Alternatively, you can use one of the scripts provided in the `scripts` directory to automate the setup:
 
@@ -61,7 +65,7 @@ Alternatively, you can use one of the scripts provided in the `scripts` director
 ./scripts/create_and_activate_venv.sh
 ```
 
-## Installing the Requirements
+### Installing the Requirements
 
 Once the virtual environment is active, install the required dependencies by running the following command:
 
@@ -69,7 +73,7 @@ Once the virtual environment is active, install the required dependencies by run
 pip install -r requirements.txt
 ```
 
-## Running the code
+### Running python files
 
 To run the application, you'll need to use two terminals:
 
@@ -82,3 +86,15 @@ python .\API\main.py
 ```bash
 streamlit run .\frontend\main.py
 ```
+
+## Running the Code with Docker
+
+An alternative way to run the project is by using Docker, which allows you to containerize the application and its dependencies. Docker ensures that the application runs consistently regardless of the environment it is deployed in.
+
+To run the project using Docker, simply use the following command in the root directory of the project:
+
+```bash
+docker-compose up --build
+```
+
+This command will build the Docker images for both the API and the frontend, and then start the containers, making the application accessible as defined in the `docker-compose.yml` file.
