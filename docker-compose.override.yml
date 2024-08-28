@@ -1,0 +1,6 @@
+version: '3.8'
+
+services:
+  frontend:
+    environment:
+      - API_URL=http://api:5000  # URL da API para quando rodar com Docker Compose
