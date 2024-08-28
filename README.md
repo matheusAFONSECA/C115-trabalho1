@@ -98,3 +98,5 @@ docker-compose up --build
 ```
 
 This command will build the Docker images for both the API and the frontend, and then start the containers, making the application accessible as defined in the `docker-compose.yml` file.
+
+> **Remember:** Make sure Docker is installed and the Docker Engine is running on your machine before attempting to use Docker commands.
